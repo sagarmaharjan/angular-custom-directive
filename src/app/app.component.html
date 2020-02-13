@@ -37,4 +37,10 @@
 
   <p appHighlight>This paragraph has been styed using custom directive</p>
   <p appBetterHighlight>This has been styled by the second directive</p>
+  <div [ngSwitch]="value">
+    <p *ngSwitchCase="10">The value is 10</p>
+    <p *ngSwitchCase="100">The value is 100</p>
+    <p *ngSwitchCase="1000">The value is 1000</p>
+    <p *ngSwitchDefault>The value is default</p>
+  </div>
 </div>
